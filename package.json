@@ -1,0 +1,46 @@
+{
+  "name": "food-website-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "camelcase-keys": "^6.2.2",
+    "dir-glob": "^3.0.1",
+    "find-up": "^4.1.0",
+    "import-fresh": "^3.3.0",
+    "json-schema-traverse": "^1.0.0",
+    "kind-of": "^6.0.3",
+    "lines-and-columns": "^1.2.4",
+    "lodash.truncate": "^4.4.2",
+    "locate-path": "^5.0.0",
+    "map-obj": "^4.3.0",
+    "merge2": "^1.4.1",
+    "min-indent": "^1.0.1",
+    "minimatch": "^3.1.2",
+    "minimist-options": "^4.1.0",
+    "ms": "^2.1.2",
+    "nanoid": "^3.3.1",
+    "p-limit": "^2.3.0",
+    "p-locate": "^4.1.0",
+    "p-try": "^2.2.0",
+    "parent-module": "^1.0.1",
+    "path-exists": "^4.0.0",
+    "path-is-absolute": "^1.0.1",
+    "path-parse": "^1.0.7",
+    "path-type": "^4.0.0",
+    "picocolors": "^1.0.0",
+    "picomatch": "^2.3.1",
+    "queue-microtask": "^1.2.3",
+    "punycode": "^2.1.1",
+    "quick-lru": "^4.0.1"
+  },
+  "devDependencies": {
+    "stylelint": "^14.5.3",
+    "stylelint-config-standard": "^25.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eli",
+  "license": "ISC"
+}

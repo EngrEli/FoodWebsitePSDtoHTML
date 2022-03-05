@@ -13,7 +13,7 @@ Setup header -- done (34m)
 - 2h
 
 
-Setup hero section
+Setup hero section -- done (40m)
 - 1h
 
 Setup food-tab section

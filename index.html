@@ -6,21 +6,393 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Website</title>
     <link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/>
 </head>
 <body>
-	<nav class="navbar">
-		<a href="#" class="navbar__company">
-			<div class="navbar__company-icon"><img src="./img/company-logo.svg"></div>
-			<div class="navbar__company-name">Foodyar</div>
-		</a>
-		<ul class="navbar__links">
-			<li class="active"><a href="">Home</a></li>
-			<li><a href="">Beverages</a></li>
-			<li><a href="">Chef</a></li>
-			<li><a href="">Ingredient</a></li>
-			<li><a href="">Stories</a></li>
-			<li class="navbar__main-link"><a href="">My Kitchen</a></li>
-		</ul>
-	</nav>
+	<div class="wrapper">
+		<nav class="navbar">
+			<a href="#" class="navbar__company">
+				<div class="navbar__company-icon"><img src="./img/company-logo.svg"></div>
+				<div class="navbar__company-name">Foodyar</div>
+			</a>
+			<ul class="navbar__links">
+				<li class="active"><a href="">Home</a></li>
+				<li><a href="">Beverages</a></li>
+				<li><a href="">Chef</a></li>
+				<li><a href="">Ingredient</a></li>
+				<li><a href="">Stories</a></li>
+				<li class="navbar__main-link"><a href="">My Kitchen</a></li>
+			</ul>
+		</nav>
+		<div class="hero">
+			<div class="hero__left">
+				<div class="hero__main-text">
+					<span class="hero__main-text--underline">Eat</span> What You Cook
+					<br>With Us, <span class="hero__main-text--underline">Together!</span>
+				</div>
+				<div class="hero__sub-text">
+					When you eat something that cooked by
+					<br>yourself, the happiness is priceless.
+				</div>
+				<button class="hero__cta">
+					Decide a Menu
+				</button>
+			</div>
+			<div class="hero__right">
+				<img src="./img/hero-img.png" alt="A girl vlogging inside her kitchen">
+			</div>
+		</div>
+		<div class="food-tab">
+			<div class="food-tab__sub-title">
+				Watch Now
+			</div>
+			<div class="food-tab__main-title">
+				Special to Try
+			</div>
+			<ul class="food-tab__menu">
+				<li class="food-tab__menu-tab food-tab__menu-tab--healthy food-tab__menu-tab--active">Healthy Food</li>
+				<li class="food-tab__menu-tab food-tab__menu-tab--lunch">Lunch</li>
+				<li class="food-tab__menu-tab food-tab__menu-tab--vege">Vege Desert</li>
+				<li class="food-tab__menu-tab food-tab__menu-tab--shake">Shake</li>
+			</ul>
+			<!-- Healthy Food -->
+			<div class="food-tab__slider food-tab__slider--healthy">
+				<div class="food-tab__card">
+					<img class="food-tab__card-image" src="./img/salad-kiwi.png" alt="Salad Kiwi dish">
+					<div class="food-tab__card-name">
+						Salad Kiwi Sugga
+					</div>
+					<div class="food-tab__card-sub-name">
+						Amir Samantha
+					</div>
+					<div class="food-tab__rating">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+					</div>
+				</div>
+				<div class="food-tab__card">
+					<img class="food-tab__card-image" src="./img/avocado-muscle.png" alt="Avocado Muscle dish">
+					<div class="food-tab__card-name">
+						Avocado Muscle
+					</div>
+					<div class="food-tab__card-sub-name">
+						John Lennonk
+					</div>
+					<div class="food-tab__rating">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+					</div>
+				</div>
+				<div class="food-tab__card">
+					<img class="food-tab__card-image" src="./img/bayam-red.png" alt="Bayam Red Poppeye dish">
+					<div class="food-tab__card-name">
+						Bayam Red Poppeye
+					</div>
+					<div class="food-tab__card-sub-name">
+						Toekang Sayoer
+					</div>
+					<div class="food-tab__rating">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+					</div>
+				</div>
+				<div class="food-tab__card">
+					<img class="food-tab__card-image" src="./img/naga-fruity.png" alt="Naga Fruity dish">
+					<div class="food-tab__card-name">
+						Naga Fruity
+					</div>
+					<div class="food-tab__card-sub-name">
+						Imee Saranghae
+					</div>
+					<div class="food-tab__rating">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+					</div>
+				</div>
+				<div class="food-tab__card">
+					<img class="food-tab__card-image" src="./img/naga-fruity.png" alt="Naga Fruity dish">
+					<div class="food-tab__card-name">
+						Naga Fruity
+					</div>
+					<div class="food-tab__card-sub-name">
+						Imee Saranghae
+					</div>
+					<div class="food-tab__rating">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+					</div>
+				</div>
+			</div>
+			<!-- Lunch Menu -->
+			<div class="food-tab__slider food-tab__slider--lunch food-tab__slider--hide">
+				<div class="food-tab__card">
+					<img class="food-tab__card-image" src="./img/salad-kiwi.png" alt="Salad Kiwi dish">
+					<div class="food-tab__card-name">
+						Salad Kiwi Sugga
+					</div>
+					<div class="food-tab__card-sub-name">
+						Amir Samantha
+					</div>
+					<div class="food-tab__rating">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+					</div>
+				</div>
+				<div class="food-tab__card">
+					<img class="food-tab__card-image" src="./img/avocado-muscle.png" alt="Avocado Muscle dish">
+					<div class="food-tab__card-name">
+						Avocado Muscle
+					</div>
+					<div class="food-tab__card-sub-name">
+						John Lennonk
+					</div>
+					<div class="food-tab__rating">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+					</div>
+				</div>
+				<div class="food-tab__card">
+					<img class="food-tab__card-image" src="./img/bayam-red.png" alt="Bayam Red Poppeye dish">
+					<div class="food-tab__card-name">
+						Bayam Red Poppeye
+					</div>
+					<div class="food-tab__card-sub-name">
+						Toekang Sayoer
+					</div>
+					<div class="food-tab__rating">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+					</div>
+				</div>
+				<div class="food-tab__card">
+					<img class="food-tab__card-image" src="./img/naga-fruity.png" alt="Naga Fruity dish">
+					<div class="food-tab__card-name">
+						Naga Fruity
+					</div>
+					<div class="food-tab__card-sub-name">
+						Imee Saranghae
+					</div>
+					<div class="food-tab__rating">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+					</div>
+				</div>
+				<div class="food-tab__card">
+					<img class="food-tab__card-image" src="./img/naga-fruity.png" alt="Naga Fruity dish">
+					<div class="food-tab__card-name">
+						Naga Fruity
+					</div>
+					<div class="food-tab__card-sub-name">
+						Imee Saranghae
+					</div>
+					<div class="food-tab__rating">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+					</div>
+				</div>
+			</div>
+			<!-- Vege Desert -->
+			<div class="food-tab__slider food-tab__slider--vege food-tab__slider--hide">
+				<div class="food-tab__card">
+					<img class="food-tab__card-image" src="./img/salad-kiwi.png" alt="Salad Kiwi dish">
+					<div class="food-tab__card-name">
+						Salad Kiwi Sugga
+					</div>
+					<div class="food-tab__card-sub-name">
+						Amir Samantha
+					</div>
+					<div class="food-tab__rating">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+					</div>
+				</div>
+				<div class="food-tab__card">
+					<img class="food-tab__card-image" src="./img/avocado-muscle.png" alt="Avocado Muscle dish">
+					<div class="food-tab__card-name">
+						Avocado Muscle
+					</div>
+					<div class="food-tab__card-sub-name">
+						John Lennonk
+					</div>
+					<div class="food-tab__rating">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+					</div>
+				</div>
+				<div class="food-tab__card">
+					<img class="food-tab__card-image" src="./img/bayam-red.png" alt="Bayam Red Poppeye dish">
+					<div class="food-tab__card-name">
+						Bayam Red Poppeye
+					</div>
+					<div class="food-tab__card-sub-name">
+						Toekang Sayoer
+					</div>
+					<div class="food-tab__rating">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+					</div>
+				</div>
+				<div class="food-tab__card">
+					<img class="food-tab__card-image" src="./img/naga-fruity.png" alt="Naga Fruity dish">
+					<div class="food-tab__card-name">
+						Naga Fruity
+					</div>
+					<div class="food-tab__card-sub-name">
+						Imee Saranghae
+					</div>
+					<div class="food-tab__rating">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+					</div>
+				</div>
+				<div class="food-tab__card">
+					<img class="food-tab__card-image" src="./img/naga-fruity.png" alt="Naga Fruity dish">
+					<div class="food-tab__card-name">
+						Naga Fruity
+					</div>
+					<div class="food-tab__card-sub-name">
+						Imee Saranghae
+					</div>
+					<div class="food-tab__rating">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+					</div>
+				</div>
+			</div>
+			<!-- Shake -->
+			<div class="food-tab__slider food-tab__slider--shake food-tab__slider--hide">
+				<div class="food-tab__card">
+					<img class="food-tab__card-image" src="./img/salad-kiwi.png" alt="Salad Kiwi dish">
+					<div class="food-tab__card-name">
+						Salad Kiwi Sugga
+					</div>
+					<div class="food-tab__card-sub-name">
+						Amir Samantha
+					</div>
+					<div class="food-tab__rating">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+					</div>
+				</div>
+				<div class="food-tab__card">
+					<img class="food-tab__card-image" src="./img/avocado-muscle.png" alt="Avocado Muscle dish">
+					<div class="food-tab__card-name">
+						Avocado Muscle
+					</div>
+					<div class="food-tab__card-sub-name">
+						John Lennonk
+					</div>
+					<div class="food-tab__rating">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+					</div>
+				</div>
+				<div class="food-tab__card">
+					<img class="food-tab__card-image" src="./img/bayam-red.png" alt="Bayam Red Poppeye dish">
+					<div class="food-tab__card-name">
+						Bayam Red Poppeye
+					</div>
+					<div class="food-tab__card-sub-name">
+						Toekang Sayoer
+					</div>
+					<div class="food-tab__rating">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+					</div>
+				</div>
+				<div class="food-tab__card">
+					<img class="food-tab__card-image" src="./img/naga-fruity.png" alt="Naga Fruity dish">
+					<div class="food-tab__card-name">
+						Naga Fruity
+					</div>
+					<div class="food-tab__card-sub-name">
+						Imee Saranghae
+					</div>
+					<div class="food-tab__rating">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+					</div>
+				</div>
+				<div class="food-tab__card">
+					<img class="food-tab__card-image" src="./img/naga-fruity.png" alt="Naga Fruity dish">
+					<div class="food-tab__card-name">
+						Naga Fruity
+					</div>
+					<div class="food-tab__card-sub-name">
+						Imee Saranghae
+					</div>
+					<div class="food-tab__rating">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+						<img src="./img/star.png" alt="star">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Slick slider -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>

@@ -1,6 +1,10 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
 :root {
 	--primary-text-color: #272042;
 	--secondary-text-color: #8B8BA5;
+	--yellow: #F7C531;
 }  
 
 /* Reset */
@@ -11,15 +15,20 @@
 	font-family: 'Quicksand', sans-serif;
 }
 
-/* Font */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+html {
+	min-height: 100vh;
+}
 
+.wrapper {
+	width: 1240px;
+	max-width: 1240px;
+	margin: 50px auto;
+}
+
+/* Navbar */
 .navbar {
 	display: flex;
 	justify-content: space-between;
-	margin: 50px auto;
-	max-width: 1240px;
-	width: 1240px;
 	align-items: center;
 }
 
@@ -92,6 +101,201 @@ li.navbar__main-link {
 	color: var(--primary-text-color);
 }
 
+li.navbar__main-link:hover {
+	cursor: pointer;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 li.navbar__main-link a {
 	color: var(--primary-text-color);
 }
+
+/* Hero section */
+.hero {
+	max-width: 1150px;
+	margin: 120px auto 0;
+	display: flex;
+	align-items: center;
+}
+
+.hero__left,
+.hero__right {
+	flex: 1;
+}
+
+.hero__main-text {
+	color: var(--primary-text-color);
+	font-size: 46px;
+	line-height: 70px;
+	font-weight: 700;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero__main-text--underline {
+	position: relative;
+}
+
+.hero__main-text--underline::after {
+	content: '';
+	position: absolute;
+	height: 8px;
+	width: 102%;
+	bottom: 8px;
+	left: 0;
+	background-color: #FBE0DC;;
+	z-index: -1;
+}
+
+.hero__sub-text {
+	margin: 10px 0 40px;
+	color: var(--secondary-text-color);
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	font-size: 20px;
+	line-height: 34px;
+}
+
+.hero__cta {
+	border-radius: 30px 30px 10px 10px;
+	background: var(--yellow);
+	padding: 13px 31px;
+	color: var(--primary-text-color);
+	display: inline-block;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	border: none;
+	font-weight: 500;
+	font-size: 20px;
+	width: 210px;
+	transition: ease-in-out 400ms all;
+}
+
+.hero__cta:hover {
+	cursor: pointer;
+	width: 230px;
+}
+
+/* /Hero section */
+
+/* Food tab section */
+.food-tab {
+	margin-top: 120px;
+}
+
+.food-tab__sub-title {
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 20px;
+	color: var(--secondary-text-color);
+}
+
+.food-tab__main-title {
+	color: var(--primary-text-color);
+	text-align: center;
+	font-weight: 700;
+	font-size: 32px;
+	margin-bottom: 30px;
+}
+
+.food-tab__menu {
+	display: flex;
+	justify-content: space-between;
+	width: 504px;
+	margin: 0 auto;
+}
+
+.food-tab__menu-tab {
+	text-align: center;
+	list-style-type: none;
+	color: var(--primary-text-color);
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.food-tab__menu-tab:hover {
+	color: var(--secondary-text-color);
+}
+
+.food-tab__menu-tab--active:hover {
+	color: var(--yellow);
+}
+
+.food-tab__menu-tab--active {
+	position: relative;
+	color: var(--yellow);
+	font-weight: 500;
+}
+
+.food-tab__menu-tab--active::after {
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 80px;
+	bottom: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: var(--yellow);
+}
+
+
+.food-tab__slider {
+	margin-top: 50px;
+	position: relative;
+}
+
+.slick-initialized .food-tab__card.slick-slide {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 287px;
+	margin: 0 15px;
+}
+
+.food-tab__rating {
+	display: flex;
+	justify-content: center;
+	margin-top: 12px;
+}
+
+.food-tab__rating img {
+	margin-right: 4px;
+}
+
+.food-tab__card-sub-name,
+.food-tab__card-name {
+	text-align: center;
+}
+
+.food-tab__card-name {
+	margin-top: 14px;
+}
+
+.food-tab__card-sub-name {
+	margin-top: 8px;
+}
+
+.slick-arrow {
+	padding: 10px;
+	font-size: 40px;
+	color: #979696;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.slick-arrow:hover{
+	color: #555454;
+}
+
+.slick-prev {
+	position: absolute;
+	left: -50px;
+}
+
+.slick-next {
+	position: absolute;
+	right: -50px;
+}
+
+.food-tab__slider.food-tab__slider--hide{
+	display: none;
+}
+/* / Food tab section */

@@ -68,6 +68,17 @@ $(document).ready(function() {
     nextArrow:"<div class='slick-next'><i class='fa fa-angle-right' aria-hidden='true'></i></div>"
   });
 
+  $('.testimonial__slider').slick({
+    variableWidth: true,
+    centerMode: true, 
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+
+
+
+  
 
 });
 

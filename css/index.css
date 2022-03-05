@@ -299,3 +299,82 @@ li.navbar__main-link a {
 	display: none;
 }
 /* / Food tab section */
+
+/* Testimonials */
+.testimonial {
+	margin-top: 120px;
+}
+
+.testimonial__card {
+	width: 736px;
+	margin: 0 auto;
+	position: relative;
+	margin:0 250px;
+	padding: 100px 0;
+}
+
+.testimonial__quotation {
+	position: absolute;
+	z-index: -1;
+	left: -120px;
+	top: 25px;
+}
+
+.testimonial__content {
+	font-size: 36px;
+	line-height: 50px;
+	color: var(--primary-text-color);
+	text-align: center;
+}
+
+.testimonial__profile {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 35px;
+}
+
+.testimonial__profile-name {
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+}
+
+.testimonial__name {
+	color: #272042;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 27.5px;
+	margin-bottom: 6px;
+}
+
+.testimonial__title {
+	color: var(--secondary-text-color);
+	font-size: 16px;
+	line-height: 20px;
+}
+
+/* Statistics section */
+.statistics {
+	width: 857px;
+	display: flex;
+	justify-content: space-between;
+	margin:0 auto;
+}
+
+.statistics__card {
+	text-align: center;
+}
+
+.statistics__number {
+	font-size: 32px;
+	font-weight: 700;
+	color: var(--primary-text-color);
+	line-height: 40px;
+}
+
+.statistics__title {
+	font-size: 20px;
+	color: var(--secondary-text-color);
+	line-height: 25px;
+}

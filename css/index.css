@@ -378,3 +378,46 @@ li.navbar__main-link a {
 	color: var(--secondary-text-color);
 	line-height: 25px;
 }
+
+/* Download section */
+.download {
+	width: 1023px;
+	margin: 120px auto;
+	display: flex;
+}
+
+.download__img {
+	flex: 1;
+}
+
+.download__content {
+	width: 444px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+.download__main {
+	width: 444px;
+	line-height: 70px;
+	color: var(--primary-text-color);
+	font-weight: 700;
+	font-size: 46px;
+}
+
+.download__sub {
+	font-size: 20px;
+	line-height: 34px;
+	margin-top: 10px;
+	color: var(--secondary-text-color);
+}
+
+.download__button-img {
+	margin-top: 50px;
+}
+
+.download__button-img img {
+	margin-right: 20px;
+	cursor: pointer;
+}

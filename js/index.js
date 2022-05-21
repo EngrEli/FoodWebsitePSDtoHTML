@@ -12,6 +12,9 @@ $(document).ready(function() {
   const HIDE_SLIDER = 'food-tab__slider--hide';
   const ACTIVE_MENU_TAB = 'food-tab__menu-tab--active';
 
+  /*
+  * Add interactive tab
+  */
   healthyMenu.addEventListener('click', function(){
     healthyMenu.classList.add(ACTIVE_MENU_TAB);
     lunchMenu.classList.remove(ACTIVE_MENU_TAB);
@@ -59,26 +62,61 @@ $(document).ready(function() {
     healthySlider.classList.add(HIDE_SLIDER);
   });
   
+  /*
+  * Integrate slick slider 
+  * upon initial loading of the site
+  */
   $('.food-tab__slider').slick({
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    variableWidth: true,
-    infinite: true,
     prevArrow:"<div class='slick-prev'><i class='fa fa-angle-left' aria-hidden='true'></i></div>",
-    nextArrow:"<div class='slick-next'><i class='fa fa-angle-right' aria-hidden='true'></i></div>"
+    nextArrow:"<div class='slick-next'><i class='fa fa-angle-right' aria-hidden='true'></i></div>",
+    variableWidth: true,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 2000,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          centerMode: true,
+        }
+      },
+      {
+        breakpoint: 599,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+        }
+      }
+    ]
   });
 
   $('.testimonial__slider').slick({
     variableWidth: true,
-    centerMode: true, 
+    slidesToShow: 1,
+    centerMode: true,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          variableWidth: false,
+        }
+      },
+      {
+        breakpoint: 599,
+        settings: {
+          centerMode: false,
+          variableWidth: false,
+        }
+      }
+    ]
   });
-
-
-
-  
-
 });
 

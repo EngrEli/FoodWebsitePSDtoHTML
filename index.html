@@ -10,10 +10,23 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/>
 </head>
 <body>
+	<div class="sidebar">
+		<ul class="sidebar__menu">
+			<i class="fa fa-times sidebar__close" aria-hidden="true"></i>
+			<li><a>Home</a></li>
+			<li><a>Beverages</a></li>
+			<li><a>Chef</a></li>
+			<li><a>Ingredient</a></li>
+			<li><a>Stories</a></li>
+			<li><a>My Kitchen</a></li>
+		</ul>
+	</div>
+	<div class="sidebar-overlay">
+	</div>
 	<div class="wrapper">
 		<nav class="navbar">
 			<a href="#" class="navbar__company">
-				<div class="navbar__company-icon"><img src="./img/company-logo.svg"></div>
+				<div class="navbar__company-icon"><img src="./img/company.png"></div>
 				<div class="navbar__company-name">Foodyar</div>
 			</a>
 			<ul class="navbar__links">
@@ -24,6 +37,7 @@
 				<li><a href="">Stories</a></li>
 				<li class="navbar__main-link"><a href="">My Kitchen</a></li>
 			</ul>
+			<i class="fa fa-bars navbar__hamburger" aria-hidden="true"></i>
 		</nav>
 		<div class="hero">
 			<div class="hero__left">
@@ -50,12 +64,14 @@
 			<div class="food-tab__main-title">
 				Special to Try
 			</div>
-			<ul class="food-tab__menu">
-				<li class="food-tab__menu-tab food-tab__menu-tab--healthy food-tab__menu-tab--active">Healthy Food</li>
-				<li class="food-tab__menu-tab food-tab__menu-tab--lunch">Lunch</li>
-				<li class="food-tab__menu-tab food-tab__menu-tab--vege">Vege Desert</li>
-				<li class="food-tab__menu-tab food-tab__menu-tab--shake">Shake</li>
-			</ul>
+			<div class="food-tab__menu-overflow">
+				<ul class="food-tab__menu">
+					<li class="food-tab__menu-tab food-tab__menu-tab--healthy food-tab__menu-tab--active">Healthy Food</li>
+					<li class="food-tab__menu-tab food-tab__menu-tab--lunch">Lunch</li>
+					<li class="food-tab__menu-tab food-tab__menu-tab--vege">Vege Desert</li>
+					<li class="food-tab__menu-tab food-tab__menu-tab--shake">Shake</li>
+				</ul>
+			</div>
 			<!-- Healthy Food -->
 			<div class="food-tab__slider food-tab__slider--healthy">
 				<div class="food-tab__card">
@@ -123,12 +139,12 @@
 					</div>
 				</div>
 				<div class="food-tab__card">
-					<img class="food-tab__card-image" src="./img/naga-fruity.png" alt="Naga Fruity dish">
+					<img class="food-tab__card-image" src="./img/salad-kiwi.png" alt="Salad Kiwi dish">
 					<div class="food-tab__card-name">
-						Naga Fruity
+						Salad Kiwi Sugga
 					</div>
 					<div class="food-tab__card-sub-name">
-						Imee Saranghae
+						Amir Samantha
 					</div>
 					<div class="food-tab__rating">
 						<img src="./img/star.png" alt="star">
@@ -206,12 +222,12 @@
 					</div>
 				</div>
 				<div class="food-tab__card">
-					<img class="food-tab__card-image" src="./img/naga-fruity.png" alt="Naga Fruity dish">
+					<img class="food-tab__card-image" src="./img/salad-kiwi.png" alt="Salad Kiwi dish">
 					<div class="food-tab__card-name">
-						Naga Fruity
+						Salad Kiwi Sugga
 					</div>
 					<div class="food-tab__card-sub-name">
-						Imee Saranghae
+						Amir Samantha
 					</div>
 					<div class="food-tab__rating">
 						<img src="./img/star.png" alt="star">
@@ -289,12 +305,12 @@
 					</div>
 				</div>
 				<div class="food-tab__card">
-					<img class="food-tab__card-image" src="./img/naga-fruity.png" alt="Naga Fruity dish">
+					<img class="food-tab__card-image" src="./img/bayam-red.png" alt="Bayam Red Poppeye dish">
 					<div class="food-tab__card-name">
-						Naga Fruity
+						Bayam Red Poppeye
 					</div>
 					<div class="food-tab__card-sub-name">
-						Imee Saranghae
+						Toekang Sayoer
 					</div>
 					<div class="food-tab__rating">
 						<img src="./img/star.png" alt="star">
@@ -372,12 +388,12 @@
 					</div>
 				</div>
 				<div class="food-tab__card">
-					<img class="food-tab__card-image" src="./img/naga-fruity.png" alt="Naga Fruity dish">
+					<img class="food-tab__card-image" src="./img/bayam-red.png" alt="Bayam Red Poppeye dish">
 					<div class="food-tab__card-name">
-						Naga Fruity
+						Bayam Red Poppeye
 					</div>
 					<div class="food-tab__card-sub-name">
-						Imee Saranghae
+						Toekang Sayoer
 					</div>
 					<div class="food-tab__rating">
 						<img src="./img/star.png" alt="star">
@@ -443,36 +459,40 @@
 		</div>
 		<!-- Testimonials -->
 		<div class="statistics">
-			<div class="statistics__card">
-				<div class="statistics__number">
-					180,000+
+			<div class="statistics__flex">
+				<div class="statistics__card">
+					<div class="statistics__number">
+						180,000+
+					</div>
+					<div class="statistics__title">
+						MENU FOOD
+					</div>
 				</div>
-				<div class="statistics__title">
-					MENU FOOD
-				</div>
-			</div>
-			<div class="statistics__card">
-				<div class="statistics__number">
-					20,000+
-				</div>
-				<div class="statistics__title">
-					COURSE
-				</div>
-			</div>
-			<div class="statistics__card">
-				<div class="statistics__number">
-					400,000+
-				</div>
-				<div class="statistics__title">
-					COURSE
+				<div class="statistics__card">
+					<div class="statistics__number">
+						20,000+
+					</div>
+					<div class="statistics__title">
+						COURSE
+					</div>
 				</div>
 			</div>
-			<div class="statistics__card">
-				<div class="statistics__number">
-					6,900,000
+			<div class="statistics__flex">
+				<div class="statistics__card">
+					<div class="statistics__number">
+						400,000+
+					</div>
+					<div class="statistics__title">
+						COURSE
+					</div>
 				</div>
-				<div class="statistics__title">
-					ALUMNI
+				<div class="statistics__card">
+					<div class="statistics__number">
+						6,900,000
+					</div>
+					<div class="statistics__title">
+						ALUMNI
+					</div>
 				</div>
 			</div>
 		</div>
@@ -499,30 +519,34 @@
 	<footer class="footer">
 		<div class="footer__flex">
 			<a href="#" class="footer__company">
-				<div class="footer__company-icon"><img src="./img/company-logo.svg"></div>
+				<div class="footer__company-icon"><img src="./img/company.png"></div>
 				<div class="footer__company-name">Foodyar</div>
 			</a>
 			<div class="footer__cont-links">
-				<ul class="footer__links">
-					<li class="footer__link-main">Special Course</li>
-					<li>Wedding Foods</li>
-					<li>Healthy and Muscle</li>
-					<li>Office Food Daily</li>
-					<li>Happy Kids</li>
-				</ul>
-				<ul class="footer__links">
-					<li class="footer__link-main">Company</li>
-					<li>APIs Developer</li>
-					<li>Career</li>
-					<li>Terms & Conditions</li>
-					<li>Privacy Policy</li>
-				</ul>
-				<ul class="footer__links">
-					<li class="footer__link-main">Be Our Friend</li>
-					<li>3, Season Park, Jakarta</li>
-					<li>support@foodyar.co,id</li>
-					<li>021 - 1111 - 2222</li>
-				</ul>
+				<div class="footer__flexbox">
+					<ul class="footer__links">
+						<li class="footer__link-main">Special Course</li>
+						<li>Wedding Foods</li>
+						<li>Healthy and Muscle</li>
+						<li>Office Food Daily</li>
+						<li>Happy Kids</li>
+					</ul>
+					<ul class="footer__links">
+						<li class="footer__link-main">Company</li>
+						<li>APIs Developer</li>
+						<li>Career</li>
+						<li>Terms & Conditions</li>
+						<li>Privacy Policy</li>
+					</ul>
+				</div>
+				<div class="footer__flexbox">
+					<ul class="footer__links">
+						<li class="footer__link-main">Be Our Friend</li>
+						<li>3, Season Park, Jakarta</li>
+						<li>support@foodyar.co,id</li>
+						<li>021 - 1111 - 2222</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</footer>
@@ -534,5 +558,7 @@
 <!-- Slick slider -->
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="./js/index.js"></script>
+<script type="text/javascript" src="./js/sidebar.js"></script>
+<script type="text/javascript" src="./js/fixedNavbar.js"></script>
 </body>
 </html>

@@ -1,4 +1,0 @@
-1. Copy the rules on css remote pc stylelint on this file 
-2. Setup Hero section -- done
-
-3. Setup food tab section

@@ -589,6 +589,10 @@ li.footer__link-main {
 		display: none !important;
 	}
 
+	.sidebar {
+		display: none;
+	}
+
 	.footer__flex {
 		max-width: 1240px;
 	}
